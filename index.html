@@ -9,11 +9,11 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #000000;
-            /* Cor de fundo preto */
+          
             margin: 0;
             padding: 0;
             color: #fff;
-            /* Cor do texto para melhor legibilidade */
+     
         }
 
         header {
@@ -38,7 +38,6 @@
             margin: 10px;
             background-color: #ffffff;
             color: #000000;
-            /* Cor do texto em branco */
             text-decoration: none;
             border-radius: 5px;
         }
@@ -59,7 +58,7 @@
 <body>
 
 <div class="menu">
-    <div class="menu-toggle" onclick="toggleMenu()"> <!-- Adiciona um ícone de menu e chama a função toggleMenu() no clique -->
+    <div class="menu-toggle" onclick="toggleMenu()"> 
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -67,6 +66,7 @@
     <ul class="menu-options">
         <li><a href="index.html">Home</a></li>
         <li><a href="sobre.html">Sobre a Empresa</a></li>
+        <li><a href="perguntas.html">Perguntas Frequentes</a></li>
     </ul>
 </div>
 
@@ -75,6 +75,7 @@
     <p>Encontre as melhores camisas do fogão aqui!</p>
     <a href="produtos.html" class="cta-button">Veja nossas camisas</a>
     <a href="sobre.html" class="sobre-button">Veja um pouco sobre a empresa</a>
+    <a href="perguntas.html" class="sobre-button">Perguntas Frequentes</a>
 </header>
 
 <section id="produtos">
@@ -82,15 +83,15 @@
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://botafogo.vtexassets.com/assets/vtex.file-manager-graphql/images/bafd4c30-9709-4644-bd00-b1b81e8f16a6___99fd3bf776ca08f1104d571ad4e0864c.png"
+                    <img src="image/foto01.webp"
                         alt="Imagem 1" style="max-width: 100%;">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://botafogo.vtexassets.com/assets/vtex.file-manager-graphql/images/4eab71f6-93e2-46ee-b6dc-bf8fcfd95128___7ed67ffade00f14821168400696ac548.png"
+                    <img src="image/foto02.webp"
                         alt="Imagem 2" style="max-width: 100%;">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://botafogo.vtexassets.com/assets/vtex.file-manager-graphql/images/2ff6cbd4-beb3-42e2-951b-6d02d4f908b7___dfadeb63eeeb6d461289199902a031f4.png"
+                    <img src="image/foto03.webp"
                         alt="Imagem 3" style="max-width: 100%;">
                 </div>
             </div>
@@ -107,7 +108,7 @@
 </section>
 
 <style>
-    /* Estilos para o menu de navegação */
+
     .menu {
         position: fixed;
         top: 10px;
@@ -134,7 +135,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        display: none; /* Oculta o menu de opções por padrão */
+        display: none;
         position: absolute;
         top: 35px;
         right: 0;
@@ -155,7 +156,7 @@
 </style>
 
 <script>
-    // Função para alternar a exibição do menu de opções
+    
     function toggleMenu() {
         var menuOptions = document.querySelector('.menu-options');
         menuOptions.style.display = (menuOptions.style.display === 'block') ? 'none' : 'block';

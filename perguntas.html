@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça uma Pergunta - Bola na Rede</title>
+    
+</head>
+<body>
+    <a href="javascript:history.go(-1)" class="go-back">&#8592; </a>
+    <div class="container">
+        <section>
+            <h2>Perguntas Frequentes - Bola na Rede</h2>
+            <div class="faq">
+                <h3>Como faço para comprar camisas do Botafogo na Bola na Rede?</h3>
+                <p class="active">Você pode comprar camisas do Botafogo em nossa loja online. Basta navegar em nosso catálogo, escolher o produto desejado e adicionar ao carrinho de compras. Em seguida, siga o processo de pagamento.</p>
+            </div>
+            <div class= "faq">
+                <h3>Qual é o prazo de entrega dos produtos?</h3>
+                <p class="active">O prazo de entrega varia de acordo com sua localização e a opção de envio escolhida. Geralmente, as entregas são feitas em até 7 dias úteis.</p>
+            </div>
+            <div class="faq">
+                <h3>Posso devolver ou trocar um produto?</h3>
+                <p class="active">Sim, aceitamos devoluções e trocas de produtos de acordo com nossa política de devolução. Entre em contato conosco para obter mais informações sobre o processo de devolução ou troca.</p>
+            </div>
+        </section>
+        <div class="question-card">
+            <h3>Faça sua pergunta</h3>
+            <form>
+                <label for="your-question">Sua pergunta:</label>
+                <textarea id="your-question" name="your-question" required></textarea>
+                <button type="submit">Enviar Pergunta</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: left;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ffffff;
+        }
+        .faq h3 {
+            cursor: pointer;
+            font-size: 18px;
+            color: #ffffff;
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            transition: color 0.3s;
+        }
+        .faq h3:hover {
+            color: #ffffff;
+        }
+        .faq p {
+            display: none;
+            margin: 0;
+            padding: 20px 0;
+            color: #ffffff;
+        }
+        .faq p.active {
+            display: block;
+        }
+        .ask-question {
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            padding: 20px;
+        }
+        .ask-question h2 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .ask-question form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .ask-question label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-align: left;
+        }
+        .ask-question textarea {
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .ask-question button {
+            color: #000000;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+        }
+        .ask-question button:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .go-back {
+            font-size: 24px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px; /* Aumentar o tamanho do botão */
+            border: 2px solid #ffffff; /* Adicionar uma borda */
+            border-radius: 10px; /* Adicionar borda arredondada */
+            margin: 20px; /* Adicionar margem ao botão */
+            display: inline-block; /* Para permitir o ajuste do tamanho */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .go-back:hover {
+            background-color: #ffffff;
+            color: #000000; }
+
+        .question-card {
+            background-color: #000000;
+            border-radius: 10px;      
+            box-shadow: 0 4px 6px rgba(14, 14, 14, 0.74);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .question-card h3 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .question-card form {
+            display: flex;
+            flex-direction: column;
+        }
+        .question-card label {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .question-card textarea {
+            height: 100px;
+            padding: 10px;    
+            font-size: 16px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        .question-card button {
+            color: #000000;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+        }
+        .question-card button:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</body>
+</html>

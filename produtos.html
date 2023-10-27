@@ -1,75 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <section id="produtos">
     <h2>Nossos Produtos</h2>
-    <ul>
-        <li>
+    <div class="cards">
+        <div class="card">
             <a href="https://store.botafogo.com.br/camisa-masculina-home-botafogo---pretobranco--btfg-0000nmts99/p">
-            <img src="https://botafogo.vtexassets.com/arquivos/ids/156935-1600-auto?v=638278817815030000&width=1600&height=auto&aspect=true" alt="Botafogo">
-            <h3>Botafogo</h3>
-            <p>Camisa 1 Masculina Alvinegra 23/24</p>
-            <p>R$350,00</p>
+                <img src="image/camisa01.webp" alt="Botafogo">
+                <h3>Botafogo</h3>
+                <p>Camisa 1 Masculina Alvinegra 23/24</p>
+                <p>R$350,00</p>
             </a>
-        </li>
-        <li>
+        </div>
+        <div class="card">
             <a href="https://store.botafogo.com.br/camisa-masculina-away-botafogo---preta-btfg-0009nmts99/p">
-            <img src="https://botafogo.vtexassets.com/arquivos/ids/156964-1600-auto?v=638297994738930000&width=1600&height=auto&aspect=true" alt="Camisa do Time 2">
-            <h3>Botafogo</h3>
-            <p>Camisa II Masculina Preta 23/24</p>
-            <p>R$300,00</p>
+                <img src="image/camisa02.png" alt="Camisa do Time 2">
+                <h3>Botafogo</h3>
+                <p>Camisa II Masculina Preta 23/24</p>
+                <p>R$300,00</p>
             </a>
-        </li>
-        <li>
+        </div>
+        <div class="card">
             <a href="https://store.botafogo.com.br/camisa-masculina-third-botafogo---brancopreta-btfg-0005nmts00/p">
-
-            <img src="https://botafogo.vtexassets.com/arquivos/ids/156831-1600-auto?v=638271214189830000&width=1600&height=auto&aspect=true" alt="Camisa do Time 3">
-            <h3>Botafogo</h3>
-            <p>Camisa III Masculina Branca 23/24</p>
-            <p>R$100,00</p>
-        </li>
-        <li>
-            <a href="https://store.botafogo.com.br/camisa-masculina-treino-jogador-botafogo---azulpreto-btfg-0022nmts60/p">
-
-            <img src="https://botafogo.vtexassets.com/arquivos/ids/156907-1600-auto?v=638271214440900000&width=1600&height=auto&aspect=true" alt="Nome do Produto 4">
-            <h3>Botafogo</h3>
-            <p>Camisa Treino Jogador Masculina 23/24
-            </p>
-            <p>R$400,00</p>
-        </li>
-        <li>
-            <a href="https://store.botafogo.com.br/camisa-masculina-viagem-botafogo---marinho-btfg-0061nmps66/p">
-            <img src="https://botafogo.vtexassets.com/arquivos/ids/157095-1600-auto?v=638307412951430000&width=1600&height=auto&aspect=true" alt="Nome do Produto 5">
-            <h3>Botafogo</h3>
-            <p>Camisa Viagem Masculina Marinho
-            </p>
-            <p>R$500,00</p>
+                <img src="image/camisa03.webp" alt="Camisa do Time 3">
+                <h3>Botafogo</h3>
+                <p>Camisa III Masculina Branca 23/24</p>
+                <p>R$100,00</p>
             </a>
-        </li>
-    </ul>
+        </div>
+        <div class="card">
+            <a href="https://store.botafogo.com.br/camisa-masculina-treino-jogador-botafogo---azulpreto-btfg-0022nmts60/p">
+                <img src="image/camisa04.webp" alt="Nome do Produto 4">
+                <h3>Botafogo</h3>
+                <p>Camisa Treino Jogador Masculina 23/24</p>
+                <p>R$400,00</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://store.botafogo.com.br/camisa-masculina-viagem-botafogo---marinho-btfg-0061nmps66/p">
+                <img src="image/camisa05.webp" alt="Nome do Produto 5">
+                <h3>Botafogo</h3>
+                <p>Camisa Viagem Masculina Marinho</p>
+                <p>R$500,00</p>
+            </a>
+        </div>
+    </div>
+    
 </section>
 
 
+
+
    <style>
-    /* Reset de estilos para remover margens e preenchimento padrão */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    width: calc(20% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
     body, h1, h2, ul, li {
         margin: 0;
         padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+           
+            
     }
 
-    /* Estilizando a seção de produtos */
     #produtos {
         text-align: center;
         padding: 20px;
-        background-color: black; /* Define o fundo como preto */
-        color: white; /* Define a cor do texto como branca para melhor legibilidade */
+        background-color: black;
+        color: white; 
     }
 
-    /* Estilizando a lista de produtos */
+
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
 
-    /* Estilizando cada item de produtos */
+
     li {
         display: inline-block;
         margin: 20px;
@@ -81,7 +134,7 @@
         transition: transform 0.2s;
     }
 
-    /* Estilizando as imagens */
+
     img {
         max-width: 100%;
         height: auto;
@@ -90,22 +143,22 @@
         width: 100%;
     }
 
-    /* Estilizando os títulos dos produtos */
+
     h3 {
         font-size: 18px;
         margin: 10px 0;
     }
 
-    /* Estilizando as descrições dos produtos */
+
     p {
         font-size: 16px;
         color: #555;
     }
 
-    /* Efeito de hover para os itens */
     li:hover {
         transform: scale(1.05);
     }
 </style>
+
 
 </section>
