@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<a href="javascript:history.go(-1)" class="go-back">&#8592; </a>
 <section id="produtos">
     <h2>Nossos Produtos</h2>
     <div class="cards">
@@ -32,7 +34,8 @@
             </a>
         </div>
         <div class="card">
-            <a href="https://store.botafogo.com.br/camisa-masculina-treino-jogador-botafogo---azulpreto-btfg-0022nmts60/p">
+            <a
+                href="https://store.botafogo.com.br/camisa-masculina-treino-jogador-botafogo---azulpreto-btfg-0022nmts60/p">
                 <img src="image/camisa04.webp" alt="Nome do Produto 4">
                 <h3>Botafogo</h3>
                 <p>Camisa Treino Jogador Masculina 23/24</p>
@@ -48,80 +51,75 @@
             </a>
         </div>
     </div>
-    
 </section>
+<style>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
 
+    .card {
+        width: calc(20% - 20px);
+        margin: 10px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
 
+    .card a {
+        text-decoration: none;
+        color: #333;
+    }
 
+    .card:hover {
+        transform: scale(1.05);
+    }
 
-   <style>
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
 
-.card {
-    width: calc(20% - 20px);
-    margin: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
+    .card h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
 
-.card a {
-    text-decoration: none;
-    color: #333;
-}
+    .card p {
+        font-size: 16px;
+        color: #555;
+    }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 16px;
-    color: #555;
-}
-
-    body, h1, h2, ul, li {
+    body,
+    h1,
+    h2,
+    ul,
+    li {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
         background-color: #000000;
-           
-            
     }
 
     #produtos {
         text-align: center;
         padding: 20px;
         background-color: black;
-        color: white; 
+        color: white;
     }
-
 
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-
 
     li {
         display: inline-block;
@@ -134,7 +132,6 @@
         transition: transform 0.2s;
     }
 
-
     img {
         max-width: 100%;
         height: auto;
@@ -143,12 +140,10 @@
         width: 100%;
     }
 
-
     h3 {
         font-size: 18px;
         margin: 10px 0;
     }
-
 
     p {
         font-size: 16px;
@@ -158,7 +153,21 @@
     li:hover {
         transform: scale(1.05);
     }
+
+    .go-back {
+        font-size: 45px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin: 20px;
+        display: inline-block;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .go-back:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
 </style>
-
-
 </section>
